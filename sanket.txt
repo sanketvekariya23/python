@@ -1,2 +1,0 @@
-this written content is overwrite
-in sanket.txt file
