@@ -1,0 +1,66 @@
+python
+
+
+comments   -> single-line comments # , multiline comments ''' unexecutable'''
+
+veriable   ->reserved veriable-named memory location in memory, it is just like container is used to stored data 
+
+data type  -> primitive inbuilt reseved in compiler i.e. interger float String boolean none    -> non primitive ->user-define   i.e. function and methods
+
+typecasting ->    int(32.00) => 32
+
+operator -> arithmatic , assignment, comparision , logical 
+
+type() ->find type of datatype
+
+input() -> take input from user -> note that always input is in String then needs to typecasting   a=input("enter the number")    b= int(a)
+
+string - String is sequence of character which is accessable via index , index always starts from 0. we can access any character by using inedx. string = 'sanket' , '''sanket''' , "sannket";
+         string[0],  slicing of the string -> pic specific sub-string from the string string[0:],string[:-1],string[2,6],string[1,-1,2]
+
+data structure in python 
+1.list  ->[]  -> mutable -> contained any type of data -> sort(),append(),insert(),pop(),remove()   // methods
+2.tuple ->{}  -> immutable ->                          -> count('a') , index(1)
+3.set	->()  ->dupicate not allowed , mutable->       -> add(),remove(),clear(),len(),union(),intersection()
+4.dictionary ->{key:value} -> mutable->                -> keys(), items() return key,values in tuple ,update("keys","value")
+						
+
+					syntax         if(), else(),elif()
+
+conditional expression:                 if(condition1):
+						#code
+					elif(condition2):
+						#code
+					elif(condition3):
+						#code
+					else:
+						#code
+
+loops: When we want to repeats a set of code then we use loops        in pytthon there are two type of loops
+									1) while  entry control loop
+									2) for     entry control loop
+					Syntax: for()
+				for i in range(2,10):	# range(start,stop) function is used  by defualt start index is zero.
+					#code
+
+			       l=[1,2,3,4,5,6]
+
+				for j in l:
+					print(l)
+			
+			
+					synatx: while()
+				while condition:    # condition = i>5
+					#code
+Continue: is skip the interation.
+
+break: break the statement and execute next.
+
+pass: pass is null statement.
+		for i in range(10):
+			pass:           # execute but do nothing 
+
+pattern programs:  in jupyter notebook :
+
+
+
