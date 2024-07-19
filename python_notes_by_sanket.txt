@@ -60,7 +60,106 @@ pass: pass is null statement.
 		for i in range(10):
 			pass:           # execute but do nothing 
 
-pattern programs:  in jupyter notebook :
 
 
+pattern programs:  				in jupyter notebook :
 
+
+function : function is group of task which is execute whenever function is calle. it is used to reuse of the code
+	   def  sum(a , b):
+		C = a + b 		sum(6,3)
+Recursion : function called it self is called recursive function 
+			def fact(n):
+		    		if n==0 or n==1:
+					return 1
+				else:
+					return n*fact(n-1)     // function is called by itself
+
+file handling :     
+			file handling means we can read or write file 
+			two types of file handling
+			1)text file 
+			2)binary file 
+	
+			opening file:
+			f = open("python_notes_by_sanket" ,"r")
+			text =f.read()
+			print(text)
+			f.close()
+
+mode of opening file  r , w, a, + corresponding read, write,append,update
+
+		with statement:
+			with open("python_notes_by_sanket") as f:
+				f.read();
+									dont need to close the file it automatically close the file
+
+
+Reading from mySql:
+			(using panda library)
+			
+	pip install PyMySQl
+	pip install sqlalchemy
+	import pandas as pd
+	import pymysql 
+	import sqlalchemy
+
+	// creating engine
+	Engine = sqlalchemy.create_engine("mysql+pymysql//root:password@localhost/sanket_database")
+	df = pd.read_sql_table(customer,Engine)
+	df
+
+class : class is instence of the object. class is blueprint of the object we can create object of the class and that is access via object
+	when class is created but memory is not allocated . whenever object is created then memory is allocated.
+	class can be reuseble.
+	
+	class railwayform:
+		def registration(self):
+			print(f"name :{self.name}")
+			print(f"address : {self.address}")
+	
+	sanketapplication = railwayform()
+	sanketapplication.name = "sanket"
+	sanketapplication.address = "surat nana varachha 395006"
+	sanketapplication.registration()
+
+self()
+Staticmethods()
+init() -> constructor
+
+inheritence: creating new class from existing class, derived class inherits properties from based class.
+
+class employee:				#based class 
+	#code
+class programmer(employee):		#derived class -> we can add new more methods in derived class
+	#code
+
+type of inheritence :   single inheritence     inherite properties  from only single class
+			multiple inheritence   inhrite properties from multiple class
+			multilevel inheritence inherite properties from a class, which inherits properties from based class
+
+super() method : super methods is used to pass perameter to a based class. if both class have same methods
+		 when method is call. it is call that method which is inside of the derived class.
+		 hence when we need to call based class method, super methods is used. it is pass perameter to a 
+	         based class
+
+
+				Exception handling in python::
+exception handling is used to handle the error and execute the code without any intrupted. if exception is
+occured than it shows exception
+
+				try-except 
+try:
+	#code
+except ZeroDivisionError:
+	#code
+except TypeError:
+	#code
+except:
+	#code 		#all exceptions are handling here.
+
+				raise keyword:
+we can create custome exception by using raise keyword in python.
+
+				finally:
+finally keyword is execute always (Compolsury)
